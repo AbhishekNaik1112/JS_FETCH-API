@@ -8,7 +8,8 @@ function getData() {
 
   const apiKey = "e6e353c05ef69868be1ab412bd9a65a0";
 
-  var createInputField = document.createElement("input");//I want this to get updated according to user input and append it in fetch
+  var createInputField = document.createElement("input"); //I want this to get updated according to user input and append it in fetch so calling getData() 
+                                                          //in the end so that it gets called every time when i give a new input in the box
 
 
   createInputField.setAttribute("type", "text");
