@@ -14,6 +14,7 @@ function getData() {
 
   createInputField.setAttribute("type", "text");
   createInputField.setAttribute("autocomplete", "on");
+  createInputField.setAttribute("placeholder", "Enter City Name");
   createInputField.style.backgroundColor = "white";
 
   const kelvinToCelsius = (kelvin) => {
