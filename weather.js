@@ -23,11 +23,13 @@ function getData() {
     const city = event.target.value;
 
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
     )
       .then((response) => response.json())
       .then((data) => {
         const result = data;
+
+    
 
         const createLocation = document.createElement("div");
         createLocation.setAttribute("class", "city");
